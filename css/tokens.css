@@ -1,0 +1,23 @@
+:root {
+  --bg: #010101;
+  --surface: #070708;
+  --surface-elevated: #0d0d0f;
+  --text: #e8eaef;
+  --muted: #8b929e;
+  --ink: #101116;
+  --space-blue: #111723;
+  --gold: #c8b8a0;
+  --gold-bright: #e2d6c4;
+  --silver: #a8b0c0;
+  --glow-champagne: rgba(200, 184, 168, 0.18);
+  --glow-blue: rgba(44, 52, 66, 0.16);
+  --border: rgba(168, 176, 192, 0.08);
+  --nav-height: 72px;
+  --max-width: 1920px;
+  --space-section: clamp(50px, 4vw, 160px);
+  --font-cn: "Noto Sans SC", "Source Han Sans SC", "PingFang SC", sans-serif;
+  --font-en: "Montserrat", sans-serif;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 0.35s var(--ease);
+  --transition-slow: 0.6s var(--ease);
+}

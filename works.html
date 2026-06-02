@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>箴选案例 | 造境于箴 — Dawn Zine </title>
+  <meta name="description" content="独箴文化精选案例：UBRAS、京东、奔驰、北大专题片、话剧九人、电影节获奖电影等品牌与机构合作项目。">
+  <meta name="keywords" content="品牌影像案例,宣传片制作,戏剧影像,电影制片,创意设计案例">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body data-page="works">
+  <header class="site-nav" role="banner">
+    <a href="index.html" class="logo-area">
+      <img src="assets/logos/logo.png" alt="" class="logo-img">
+      <span class="logo-text">DAWN ZINE 独箴</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="index.html" data-nav="home">首页</a>
+      <a href="about.html" data-nav="about">关于</a>
+      <a href="services.html" data-nav="services">业务</a>
+      <a href="works.html" data-nav="works">案例</a>
+      <a href="team.html" data-nav="team">团队</a>
+      <a href="contact.html" data-nav="contact">联系</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="works-banner" data-works-banner aria-label="精选案例横幅轮播">
+      <div class="works-banner-viewport">
+        <div class="works-banner-track">
+          <article class="works-banner-slide is-active" data-slide-index="0">
+            <picture>
+              <img src="assets/images/cases/banner/bn-1.png" alt="独箴精选案例横幅一" loading="eager" decoding="async">
+            </picture>
+            <video muted loop playsinline preload="metadata" aria-hidden="true">
+              <source src="assets/images/cases/banner/bn-1.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="works-banner-slide" data-slide-index="1">
+            <picture>
+              <img src="assets/images/cases/banner/bn-2.png" alt="独箴精选案例横幅二" loading="lazy" decoding="async">
+            </picture>
+            <video muted loop playsinline preload="metadata" aria-hidden="true">
+              <source src="assets/images/cases/banner/bn-2.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="works-banner-slide" data-slide-index="2">
+            <picture>
+              <img src="assets/images/cases/banner/bn-3.png" alt="独箴精选案例横幅三" loading="lazy" decoding="async">
+            </picture>
+            <video muted loop playsinline preload="metadata" aria-hidden="true">
+              <source src="assets/images/cases/banner/bn-3.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="works-banner-slide" data-slide-index="3">
+            <picture>
+              <img src="assets/images/cases/banner/bn-4.png" alt="独箴精选案例横幅四" loading="lazy" decoding="async">
+            </picture>
+            <video muted loop playsinline preload="metadata" aria-hidden="true">
+              <source src="assets/images/cases/banner/bn-4.mp4" type="video/mp4">
+            </video>
+          </article>
+        </div>
+      </div>
+      <div class="works-banner-progress" aria-hidden="true">
+        <span class="works-banner-progress-track"><span></span></span>
+        <span class="works-banner-progress-track"><span></span></span>
+        <span class="works-banner-progress-track"><span></span></span>
+        <span class="works-banner-progress-track"><span></span></span>
+      </div>
+    </section>
+
+    <header class="page-hero" style="--page-hero-bg: url('assets/images/hero-poster.png')">
+      <p class="page-hero-eyebrow">箴选案例</p>
+      <h1>造境于箴</h1>
+    </header>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="filter-bar" role="tablist" aria-label="案例分类">
+          <button type="button" class="filter-btn is-active" data-filter="brand">品牌商业</button>
+          <button type="button" class="filter-btn" data-filter="institution">机构合作</button>
+          <button type="button" class="filter-btn" data-filter="design">平面视觉</button>
+          <button type="button" class="filter-btn" data-filter="film">电影合作</button>
+          <button type="button" class="filter-btn" data-filter="theater">剧场艺术</button>
+        </div>
+        <div id="works-grid" class="works-grid" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="work-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button type="button" class="modal-close" aria-label="关闭">×</button>
+      <div class="modal-media"></div>
+      <div class="modal-body">
+        <h2 id="modal-title" data-modal-title></h2>
+        <p class="client" data-modal-client></p>
+        <p data-modal-desc></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">DAWN ZINE 独箴</div>
+      <div class="footer-links">
+        <a href="mailto:dawnzine@163.com">dawnzine@163.com</a>
+        <a href="services.html">业务服务</a>
+        <a href="contact.html">联系我们</a>
+      </div>
+      <p class="footer-copy">©2026 DAWN ZINE 独箴 保留所有权利</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/works.js"></script>
+  <script src="js/works-banner.js"></script>
+</body>
+</html>
